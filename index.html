@@ -1,71 +1,38 @@
-<script>
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 
-function game(){
-    function playRound(playerSelection, computerSelection) {
-    
-    if(playerSelection == "Rock" && computerSelection == "Paper"){
-        console.log("You Win! Rock beats Paper");   
-        return true;
-         
-    }
-    if(playerSelection == "Paper" && computerSelection == "Paper"){
-        console.log("Draw!");
-        return false;
-    }
-    if(playerSelection == "Scissor" && computerSelection == "Paper"){
-        console.log("You Win! Scissor beats Paper");
-        return true;
-    }
-    if(playerSelection == "Rock" && computerSelection == "Scissor"){
-        console.log("You Win! Rock beats Scissor");
-        return true;
-    }
-    if(playerSelection == "Paper" && computerSelection == "Scissor"){
-        console.log("You Loose! Scissor beats Paper");
-        return false;
-    }
-    if(playerSelection == "Scissor" && computerSelection == "Scissor"){
-        console.log("Draw!");
-        return false;
-    }
-    if(playerSelection == "Rock" && computerSelection == "Rock"){
-        console.log("Draw!");
-        return false;
-    }
-    if(playerSelection == "Paper" && computerSelection == "Rock"){
-        console.log("You Loose! Rock beats Paper");
-        return false;
-    }
-    if(playerSelection == "Scissor" && computerSelection == "Rock"){
-        console.log("You Loose! Rock beats Scissor");
-        return false;
-    }
-}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>My test page</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="main-wrapper">
+            <div class="button-wrapper">
+                <input type="button" id="myBtn" value="Rock">
+                <input type="button" id="myBtn" value="Paper">
+                <input type="button" id="myBtn" value="Scissor">
+            </div>
+            <div class="score-div">
+                <div class="score">
+                    <p>Player-score</p>
+                    <p id="player-score"></p>
 
-    const playerSelection =  window.prompt("Pick between Rock, Paper and Scissor!: ");
-    const computerSelection = computerPlay();
-    console.log("Player guessed " + playerSelection,"Computer guessed " + computerSelection);
-    console.log(playRound(playerSelection, computerSelection));
-
-    
-
-
-    function computerPlay(){
-        const computerGuess = ["Rock", "Paper", "Scissor"];
-        const random = Math.floor(Math.random() * computerGuess.length);
-        console.log(random, computerGuess[random]);
-        return computerGuess[random];
-
-    }
-}
-
-game();
-
-
-
-
-
-
-
-
-</script>
+                </div>
+                <div class="score">
+                    <p>Computer-score</p>
+                    <p id="computer-score"></p>
+                    
+        
+                </div>
+            </div>
+            
+        </div>
+        
+        
+        
+    <script src="index.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    </body>
+</html>
