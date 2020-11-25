@@ -8,45 +8,45 @@ let computerScore =0;
     function playRound(player, computer) {
         if(player == "Rock"){
             if(computer == "Rock"){
-                //alert("It's a draw!");
+                document.getElementById("conclusion").innerHTML = "It's a draw!";
             }
             if(computer == "Paper"){
-                //alert("You loose!");
+                document.getElementById("conclusion").innerHTML = "You lost!";
                 computerScore++;
                 document.getElementById("computer-score").innerHTML = computerScore;
             }
             if(computer == "Scissor"){
-                //alert("You win!");
+                document.getElementById("conclusion").innerHTML = "You won!";
                 playerScore++;
                 document.getElementById("player-score").innerHTML = playerScore;
             }            
         }
         if(player == "Paper"){
             if(computer == "Paper"){
-                //alert("It's a draw!");
+                document.getElementById("conclusion").innerHTML = "It's a draw!";
             }
             if(computer == "Rock"){
-                //alert("You win!");
+                document.getElementById("conclusion").innerHTML = "You won!";
                 playerScore++;
                 document.getElementById("player-score").innerHTML = playerScore;
             }
             if(computer == "Scissor"){
-                //alert("You loose!");
+                document.getElementById("conclusion").innerHTML = "You lost!";
                 computerScore++;
                 document.getElementById("computer-score").innerHTML = computerScore;
             }            
         }
         if(player == "Scissor"){
             if(computer == "Scissor"){
-                //alert("It's a draw!");
+                document.getElementById("conclusion").innerHTML = "It's a draw!";
             }
             if(computer == "Rock"){
-                //alert("You loose!");
+                document.getElementById("conclusion").innerHTML = "You lost!";
                 computerScore++;
                 document.getElementById("computer-score").innerHTML = computerScore;
             }
             if(computer == "Paper"){
-                //alert("You win!");
+                document.getElementById("conclusion").innerHTML = "You won!";
                 playerScore++;
                 document.getElementById("player-score").innerHTML = playerScore;
             }            
