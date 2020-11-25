@@ -11,21 +11,33 @@
     <body>
         <div class="main-wrapper">
             <div class="button-wrapper">
-                <input type="button" id="myBtn" value="Rock">
-                <input type="button" id="myBtn" value="Paper">
-                <input type="button" id="myBtn" value="Scissor">
+                
+                <button type="button" class="btn btn-background-slide">Rock</button>
+                <button type="button" class="btn btn-background-slide">Paper</button>
+                <button type="button" class="btn btn-background-slide">Scissor</button>
+                
+            </div>
+            <div class="result-div">
+                <div class="result player-result-div">
+                    <p class="result-title">Player shoose</p>
+                    <p id="player-result"></p>
+
+                </div>
+                <div class="result computer-result-div">
+                    <p class="result-title">Computer shoose</p>
+                    <p id="computer-result"></p>
+
+                </div>
+
             </div>
             <div class="score-div">
                 <div class="score">
                     <p>Player-score</p>
                     <p id="player-score"></p>
-
                 </div>
                 <div class="score">
                     <p>Computer-score</p>
-                    <p id="computer-score"></p>
-                    
-        
+                    <p id="computer-score"></p>        
                 </div>
             </div>
             

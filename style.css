@@ -1,11 +1,31 @@
 body {
     background-image: url('background-4232859_1280.webp');
-  background-size: cover;
-  background-position: top center;
+    background-size: cover;
+    background-position: top center;
+    font-family: 'Raleway',sans-serif;
+    font-size: 20px;
+
+    
+    
 }
+
+
 
 .main-wrapper{
     /*border: 3px solid black; */   
+}
+
+.result-div{
+    display:flex;
+    justify-content: center;    
+    
+}
+
+.result{
+    height: 100px;
+    width: 300px;
+    margin: 0 20px;
+    text-align: center;
 }
 .button-wrapper{
     width: 100%;
@@ -14,13 +34,72 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;   
+    
 }
 
-#myBtn{
-    width: 100px;
-    height: 100px;
-    margin: 0 20px
+
+ /*-----Button and animation-----*/
+ 
+
+button{
+    margin: 1rem;
 }
+
+.btn{
+    background-color: var(--background-color);
+    color: black;
+    width:2000px;
+    height:100px;
+    margin:30px;    
+    border:none;
+    outline:none;
+    position: relative;
+    cursor:pointer;
+    font-family: 'Raleway',sans-serif;
+    font-size: 30px;
+    padding: .5em 1em;
+    
+    text-transform: uppercase;
+
+    --background-color: #e3e3e3;
+    --accent-color: #526aff;
+
+    
+}
+
+.btn.btn-background-slide::before{
+    content: '';
+    position: absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    z-index:-1;
+    background-color: var(--accent-color);
+
+    transition: transform 300ms ease-in-out;
+    transform:scaleX(0);
+    transform-origin: left;
+    
+}
+
+.btn.btn-background-slide:hover::before
+{
+    transform: scaleX(1);
+
+}
+
+.btn.btn-background-slide{
+    transition:color 300ms ease-in-out;
+    z-index:1;
+}
+
+.btn.btn-background-slide:hover
+{
+    color:white;
+}
+
+/*-----Button animation-----*/
 
 .score-div{
     display: flex;
@@ -30,7 +109,10 @@ body {
 
 
 .score{    
-    border: 3px solid black;
+    
+    border-style: double;
+    border-color:black ;
+    color:white;
     height: 200px;
     width: 300px;
     margin: 50px 20px;
