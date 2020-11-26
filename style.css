@@ -9,8 +9,6 @@ body {
     
 }
 
-
-
 .main-wrapper{
     /*border: 3px solid black; */   
 }
@@ -19,6 +17,12 @@ body {
     text-align:center;
     padding: 50px 0 0 0;
     
+}
+
+.result #conclusion{
+    font-size: 30px;
+    color:white;
+    text-transform: uppercase;
 }
 
 
@@ -37,7 +41,7 @@ body {
 }
 .button-wrapper{
     width: 100%;
-    height: 300px;
+    height: 200px;
     /*border: 1px solid red;*/
     display: flex;
     align-items: center;
@@ -57,24 +61,38 @@ button{
 
 .btn{
     background-color: var(--background-color);
-    color: black;
-    
-    width:200px;
-    height:100px;
-    margin:30px;        
+    color: black;            
     outline:none;
     position: relative;
     cursor:pointer;
     font-family: 'Raleway',sans-serif;
     font-size: 30px;
-    padding: .5em 1em;
-    
+    padding: .5em 1em;    
     text-transform: uppercase;
 
     --background-color: #e3e3e3;
     --accent-color: #526aff;
 
+    width:200px;
+    height:100px;
+    margin:30px; 
+
     
+}
+
+.reset-div{
+    
+    text-align: center;
+}
+
+.btn.reset-btn{
+    font-size: 20px;
+    height:75px;
+    width:150px;
+}
+
+.btn.reset-btn:active{
+    top: 2px;
 }
 
 .btn.btn-background-slide:active {
@@ -128,7 +146,7 @@ button{
     border-style: double;
     border-color:black ;
     color:white;
-    height: 200px;
+    height: 100px;
     width: 300px;
     margin: 50px 20px;
 
