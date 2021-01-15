@@ -56,7 +56,7 @@ function playRound(player, computer) {
             document.getElementById("conclusion").innerHTML = "You won the game";
             playerScore =0;
             computerScore =0;
-            $('.btn-background-slide').prop('disabled', true);
+            $('.user-btn').prop('disabled', true);
             
             
         }  
@@ -64,7 +64,7 @@ function playRound(player, computer) {
             document.getElementById("conclusion").innerHTML = "You lost the game";
             playerScore =0;
             computerScore =0;
-            $('.btn-background-slide').prop('disabled', true);
+            $('.user-btn').prop('disabled', true);
             
             
         }  
@@ -81,7 +81,7 @@ function computerPlay(){ //datorns gissning
 }
 
     function userValue(){
-        $(".btn-background-slide").click(function() {
+        $(".user-btn").click(function() {
             const answer = this.innerHTML;
             console.log("Player has " + answer);      
             document.getElementById('player-result').innerHTML = answer;     
@@ -90,7 +90,7 @@ function computerPlay(){ //datorns gissning
     }
 
     function resetMatch(){
-        $('.btn-background-slide').prop('disabled', false);
+        $('.user-btn').prop('disabled', false);
         document.getElementById("conclusion").innerHTML = "";
          playerScore ="0";
          computerScore ="0";
