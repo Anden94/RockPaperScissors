@@ -51,7 +51,7 @@ function playRound(player, computer) {
                 document.getElementById("player-score").innerHTML = playerScore;
             }            
         }   
-        console.log(playerScore, computerScore)           
+        console.log(playerScore, computerScore)    ;       
         if(playerScore == 5){
             document.getElementById("conclusion").innerHTML = "You won the game";
             playerScore =0;
